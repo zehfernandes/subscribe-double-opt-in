@@ -33,7 +33,7 @@ export async function POST(request: Request) {
 
     // Send confirmation email
     await resend.emails.send({
-      from: "zeh@zeh.tools",
+      from: "Resend <resend@resend.dev>",
       to: email,
       subject: "Confirm your subscription",
       react: ConfirmationEmail({ confirmationLink }),
